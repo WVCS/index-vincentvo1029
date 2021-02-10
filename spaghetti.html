@@ -9,7 +9,15 @@
         <hr size = "30" noshade color = "black">
     </a>
      <img src="https://cdn.shopify.com/s/files/1/1698/1675/products/Tomato_Thessaloniki.jpg?v=1537070112" class="images">
+  <div class="row">
+  <div class="column">
+    <img src="https://cdn.shopify.com/s/files/1/1698/1675/products/Tomato_Thessaloniki.jpg?v=1537070112" alt="Snow" style="width:50%">
+  </div>
+  <div class="column">
+    <img src="https://lh3.googleusercontent.com/proxy/rfpoQsSpGp6pXlkTUu5S18EK9aRGbDKxjvUlXElrqpgKxasnP5Covv2u1qzqFvE5jAhg6p852gzJ4yDsGCnAMeMZ6sJFCiWFRYpO2BcM9riF3taUzzMGs7DgnzqfRmnZHein8Q" alt="Forest" style="width:50%">
+  </div>
   
+</div>
   
   
   <table>
@@ -78,7 +86,22 @@ table, th, td{
  padding: 15px;
 
 }
+    .column {
+  
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 
   </style>
+  
   
 </html>
