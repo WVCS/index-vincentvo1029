@@ -6,7 +6,7 @@
     Spaghetti   :D
   </h1>
       </div>
-       <ul>
+       <ul class = "bur">
   <li class ="bar"><a href="index.html">Home</a></li>
   <li class = "bar"><a href="spaghetii.html">Spaghetti</a></li>
 
@@ -104,7 +104,7 @@ table, th, td{
   clear: both;
   display: table;
 }
-    ul {
+    .bur {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -124,8 +124,12 @@ table, th, td{
   text-decoration: none;
 }
 
-.bar a:hover {
+.bar a:hover:not(.active) {
   background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
 }
 
 
