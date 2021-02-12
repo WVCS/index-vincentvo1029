@@ -6,7 +6,11 @@
     Spaghetti
   </h1>
       </div>
-        <hr size = "30" noshade color = "black">
+       <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="spaghetii.html">Spaghetti</a></li>
+
+</ul>
     </a>
      <img src="https://cdn.shopify.com/s/files/1/1698/1675/products/Tomato_Thessaloniki.jpg?v=1537070112" class="images">
   <div class="row">
@@ -98,6 +102,33 @@ table, th, td{
   content: "";
   clear: both;
   display: table;
+}
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
 }
 
 
