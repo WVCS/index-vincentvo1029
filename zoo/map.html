@@ -1,0 +1,146 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <div>
+   <link rel="stylesheet" href="../style.css">
+  <li class = "navi woof" style = "margin-top: 0px;background-color:#4cdf8e;"><a href="map.html">Home</a></li>
+  <li class = "navi woof" style = "margin-top: 0px;background-color:#4cdf8e;"><a href="Africa.html">African</a></li>
+  <li class = "navi woof" style = "margin-top: 0px;background-color:#4cdf8e;"><a href="NA.html">North American</a></li>
+  <li class = "navi woof" style = "margin-top: 0px;background-color:#4cdf8e;"><a href="NA.html">Mouse</a></li>
+    </div>
+  
+  
+  <button id="text" onclick="myFunction()">Hide</button>
+ <h2 id="myDIV" style="text-align: center;">
+    Closed due to covid
+  
+  </h2>
+  
+  <h3 style="text-align:center;font-size:50px;">
+    African Animals
+    
+  </h3>
+    <img src="map.jpg" style="width:90%;">
+
+  </body>
+  <style>
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+    #text{
+  margin-left:40%;
+  width: 20%;
+  font-size:30px;
+  color:white;
+  padding: 15px 32px;
+  background-color:#4cdf8e;
+}
+html{
+font-family: Arial, Helvetica, sans-serif;}
+* {
+  box-sizing: border-box;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    body{margin: 0;
+    }
+  </style>
+  
+  <script>
+    function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    document.getElementById('text').innerHTML='Hide';
+  } else {
+    x.style.display = "none";
+     document.getElementById('text').innerHTML='Show';
+  }
+}
+
+
+
+
+
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// Full-width images
+function one() {
+    for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "100%";  // IE10
+    elements[i].style.flex = "100%";
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "50%";  // IE10
+    elements[i].style.flex = "50%";
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.msFlex = "25%";  // IE10
+    elements[i].style.flex = "25%";
+  }
+}
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myHeader");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+  </script>
+</html>
